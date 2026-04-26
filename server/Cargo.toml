@@ -1,12 +1,14 @@
 [package]
 name = "server"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
-common.workspace = true
-tokio.workspace = true
-bytes = "1.11.1"
-futures = "0.3.32"
-tokio-util = { version = "0.7.18", features = ["codec"] }
-dashmap = "6.1.0"
+common = { workspace = true }
+bytes = "1"
+tokio = { workspace = true }
+tokio-util = { version = "0.7", features = ["codec"] }
+futures = { workspace = true }
+dashmap = "5"
+csv = "1.3"
+serde = { workspace = true }
